@@ -1,6 +1,5 @@
 <?php 
      include "../inc/dbinfo.inc";
- include "lib/header.php";
 $conexion = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 ?>
 <?php
@@ -69,7 +68,7 @@ if (isset($_POST['listo']))
     </div>
                      <div class="row justify-content-md-center">
                      <div  >
-                     <form action="index.php" method="POST" enctype="multipart/form-data">
+                     <form action="SamplePage.php" method="POST" enctype="multipart/form-data">
                         <input type="submit" class="btn btn-warning btn-block" name="salir" value="Salir">
                      </form>
                     </div><br>
@@ -78,9 +77,7 @@ if (isset($_POST['listo']))
 </div>
 </section>
 
-<?php 
-    include "lib/footer.php";
-?>
+
 
 
 

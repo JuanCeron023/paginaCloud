@@ -1,13 +1,6 @@
-<!DOCTYPE html> 
-<html lang="en" > 
-<?php include "../inc/dbinfo.inc"; 
-include "lib/header.php";
-?> 
+<!DOCTYPE html> <html lang="en" > <?php include "../inc/dbinfo.inc"; ?> 
 <head>
-  <meta charset="UTF-8"> <title>login</title> 
-  <link rel="stylesheet" href="./style.css">
-
-</head> <body> <?php $bool 
+  <meta charset="UTF-8"> <title>login</title> </head> <body> <?php $bool 
 = True;
 
   $conexion = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
@@ -40,7 +33,7 @@ include "lib/header.php";
 	class="container">
 		<h1 style="color:white">Bienvenido</h1>
 		
-		<form class="form" action="index.php" method="POST" > 
+		<form class="form" action="SamplePage.php" method="POST" > 
 			<input name="nombre" type="text" 
 			placeholder="Usuario"> <input name="pass" 
 			type="password" placeholder="Contraseña"> 
@@ -52,10 +45,5 @@ include "lib/header.php";
 	<ul class="bg-bubbles"> <li></li> <li></li> <li></li> <li></li> 
 		<li></li> <li></li> <li></li> <li></li> <li></li> 
 		<li></li>
-	</ul> </div> 
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-<?php include "lib/footer.php";
-?>
- </body>
+	</ul> </div> <!-- partial --> </body>
 </html>
